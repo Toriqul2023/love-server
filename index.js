@@ -26,8 +26,8 @@ let db;
         
        app.get('/',async(req,res)=>{
        
-        
-        res.send("hi")
+        const result = await collection.find().toArray();
+        res.send(result);
        })
     
           
