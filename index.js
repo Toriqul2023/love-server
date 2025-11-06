@@ -24,10 +24,10 @@ let db;
           
         })
         
-       app.post('/portfolio',async(req,res)=>{
-        const data=req.body
+       app.get('/',async(req,res)=>{
+       
         
-        res.send(result)
+        res.send("hi")
        })
     
           
